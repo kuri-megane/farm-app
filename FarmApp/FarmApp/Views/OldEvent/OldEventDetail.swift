@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct EventDetail: View {
+struct OldEventDetail: View {
     @EnvironmentObject var modelData: ModelData
     var event: Event
 
@@ -37,7 +37,7 @@ struct EventDetail_Previews: PreviewProvider {
     static let modelData = ModelData()
 
     static var previews: some View {
-        EventDetail(event: modelData.events[0])
+        OldEventDetail(event: modelData.events[0])
             .environmentObject(modelData)
     }
 }

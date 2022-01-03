@@ -1,26 +1,34 @@
 import SwiftUI
+import RealmSwift
 
 struct EventItem: View {
-    var event: Event
-    
+    @ObservedRealmObject var item: Item
+
     var body: some View {
-        VStack(alignment: .leading) {
-            event.image
-                .renderingMode(.original)
-                .resizable()
-                .frame(width: 155, height: 155)
-                .cornerRadius(20)
-            
-            Text(event.name)
-                .foregroundColor(.primary)
-                .font(.caption)
+        NavigationLink(destination: EventItemDetail(item: item)) {
+            VStack(alignment: .leading){
+                // 画像
+                Image("daikon")
+                    .renderingMode(.original)
+                    .resizable()
+                    .frame(width: 155, height: 155)
+                    .cornerRadius(20)
+                // イベント名
+                Text(item.name)
+                    .foregroundColor(.primary)
+                    .font(.caption)
+                // アクティブ
+                if item.isActive {
+                    Image(systemName: "leaf.fill")
+                }
+            }.padding(.leading, 15)
         }
-        .padding(.leading, 15)
     }
 }
 
-struct EventItemItem_Previews: PreviewProvider {
+struct EventItem_Previews: PreviewProvider {
     static var previews: some View {
-        EventItem(event: ModelData().events[0])
+        let item = Item()
+        EventItem(item: item)
     }
 }

@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct EventRow: View {
+struct OldEventRow: View {
     var categoryName: String
     var items: [Event]
     
@@ -14,8 +14,8 @@ struct EventRow: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 0) {
                     ForEach(items) { event in
-                        NavigationLink(destination: EventDetail(event: event)){
-                            EventItem(event: event)
+                        NavigationLink(destination: OldEventDetail(event: event)){
+                            OldEventItem(event: event)
                         }
                     }
                 }
@@ -28,7 +28,7 @@ struct EventRow: View {
 struct EventRow_Previews: PreviewProvider {
     static var events = ModelData().events
     static var previews: some View {
-        EventRow(
+        OldEventRow(
             categoryName: events[0].category.rawValue,
             items: Array(events.prefix(4)))
     }

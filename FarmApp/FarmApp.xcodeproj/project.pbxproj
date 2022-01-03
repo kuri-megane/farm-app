@@ -7,44 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C3225CE27831C3D00EA1E43 /* EventItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3225CD27831C3D00EA1E43 /* EventItem.swift */; };
+		4C3225D22783203300EA1E43 /* EventItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3225D12783203300EA1E43 /* EventItemRow.swift */; };
+		4C3225D42783212100EA1E43 /* LocalOnlyContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3225D32783212100EA1E43 /* LocalOnlyContentView.swift */; };
+		4C3225D6278321DC00EA1E43 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3225D5278321DC00EA1E43 /* Item.swift */; };
+		4C3225D82783221E00EA1E43 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3225D72783221E00EA1E43 /* Group.swift */; };
+		4C3225DB278337B400EA1E43 /* EventItemAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3225DA278337B400EA1E43 /* EventItemAdd.swift */; };
+		4C3225DE278344C700EA1E43 /* EventItemEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3225DD278344C700EA1E43 /* EventItemEdit.swift */; };
+		4C3225E02783460900EA1E43 /* EventItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3225DF2783460900EA1E43 /* EventItemDetail.swift */; };
 		4C6455562781CA400002EA0D /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6455552781CA400002EA0D /* Map.swift */; };
 		4C64555A2781D14A0002EA0D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6455592781D14A0002EA0D /* Event.swift */; };
 		4C64555C2781DB2B0002EA0D /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C64555B2781DB2B0002EA0D /* ModelData.swift */; };
-		4C6455612781DC670002EA0D /* EventItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6455602781DC670002EA0D /* EventItem.swift */; };
+		4C6455612781DC670002EA0D /* OldEventItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6455602781DC670002EA0D /* OldEventItem.swift */; };
 		4C6455632781DF810002EA0D /* SampleEventData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C6455622781DF810002EA0D /* SampleEventData.json */; };
-		4C6455652781E0CD0002EA0D /* EventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6455642781E0CD0002EA0D /* EventDetail.swift */; };
+		4C6455652781E0CD0002EA0D /* OldEventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6455642781E0CD0002EA0D /* OldEventDetail.swift */; };
 		4C6455672781E2160002EA0D /* ActiveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6455662781E2160002EA0D /* ActiveButton.swift */; };
 		4C64556A2781EE430002EA0D /* daikon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4C6455682781EE430002EA0D /* daikon.jpeg */; };
 		4C64556B2781EE430002EA0D /* komatsuna.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4C6455692781EE430002EA0D /* komatsuna.jpeg */; };
 		4C64556D2781F3CF0002EA0D /* map_sample.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C64556C2781F3CF0002EA0D /* map_sample.png */; };
 		4C645574278203240002EA0D /* SquareImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C645573278203240002EA0D /* SquareImageView.swift */; };
+		4C6455842782F1AD0002EA0D /* Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6455832782F1AD0002EA0D /* Sample.swift */; };
 		4CF9780E2781A6BD008677FE /* FarmAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9780D2781A6BD008677FE /* FarmAppApp.swift */; };
 		4CF978102781A6BD008677FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9780F2781A6BD008677FE /* ContentView.swift */; };
 		4CF978122781A6C0008677FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF978112781A6C0008677FE /* Assets.xcassets */; };
 		4CF978152781A6C0008677FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CF978142781A6C0008677FE /* Preview Assets.xcassets */; };
 		4CF9781C2781AB7B008677FE /* MapHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9781B2781AB7B008677FE /* MapHome.swift */; };
-		4CF9781E2781AB9E008677FE /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9781D2781AB9E008677FE /* EventRow.swift */; };
+		4CF9781E2781AB9E008677FE /* OldEventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF9781D2781AB9E008677FE /* OldEventRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C3225CD27831C3D00EA1E43 /* EventItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItem.swift; sourceTree = "<group>"; };
+		4C3225D12783203300EA1E43 /* EventItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItemRow.swift; sourceTree = "<group>"; };
+		4C3225D32783212100EA1E43 /* LocalOnlyContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalOnlyContentView.swift; sourceTree = "<group>"; };
+		4C3225D5278321DC00EA1E43 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		4C3225D72783221E00EA1E43 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		4C3225DA278337B400EA1E43 /* EventItemAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItemAdd.swift; sourceTree = "<group>"; };
+		4C3225DD278344C700EA1E43 /* EventItemEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItemEdit.swift; sourceTree = "<group>"; };
+		4C3225DF2783460900EA1E43 /* EventItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItemDetail.swift; sourceTree = "<group>"; };
 		4C6455552781CA400002EA0D /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		4C6455592781D14A0002EA0D /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		4C64555B2781DB2B0002EA0D /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
-		4C6455602781DC670002EA0D /* EventItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItem.swift; sourceTree = "<group>"; };
+		4C6455602781DC670002EA0D /* OldEventItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldEventItem.swift; sourceTree = "<group>"; };
 		4C6455622781DF810002EA0D /* SampleEventData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleEventData.json; sourceTree = "<group>"; };
-		4C6455642781E0CD0002EA0D /* EventDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetail.swift; sourceTree = "<group>"; };
+		4C6455642781E0CD0002EA0D /* OldEventDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldEventDetail.swift; sourceTree = "<group>"; };
 		4C6455662781E2160002EA0D /* ActiveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveButton.swift; sourceTree = "<group>"; };
 		4C6455682781EE430002EA0D /* daikon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = daikon.jpeg; sourceTree = "<group>"; };
 		4C6455692781EE430002EA0D /* komatsuna.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = komatsuna.jpeg; sourceTree = "<group>"; };
 		4C64556C2781F3CF0002EA0D /* map_sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_sample.png; sourceTree = "<group>"; };
 		4C645573278203240002EA0D /* SquareImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareImageView.swift; sourceTree = "<group>"; };
+		4C6455832782F1AD0002EA0D /* Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample.swift; sourceTree = "<group>"; };
 		4CF9780A2781A6BD008677FE /* FarmApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FarmApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF9780D2781A6BD008677FE /* FarmAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmAppApp.swift; sourceTree = "<group>"; };
 		4CF9780F2781A6BD008677FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4CF978112781A6C0008677FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CF978142781A6C0008677FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4CF9781B2781AB7B008677FE /* MapHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapHome.swift; sourceTree = "<group>"; };
-		4CF9781D2781AB9E008677FE /* EventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
+		4CF9781D2781AB9E008677FE /* OldEventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldEventRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C3225D92783379C00EA1E43 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				4C3225DA278337B400EA1E43 /* EventItemAdd.swift */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		4C3225DC2783383000EA1E43 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				4C3225CD27831C3D00EA1E43 /* EventItem.swift */,
+				4C3225D12783203300EA1E43 /* EventItemRow.swift */,
+				4C3225D5278321DC00EA1E43 /* Item.swift */,
+				4C3225D72783221E00EA1E43 /* Group.swift */,
+				4C3225DD278344C700EA1E43 /* EventItemEdit.swift */,
+				4C3225DF2783460900EA1E43 /* EventItemDetail.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
 		4C64555D2781DB530002EA0D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,10 +120,13 @@
 		4C64556F278201C40002EA0D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4C3225D92783379C00EA1E43 /* Add */,
 				4CF9780F2781A6BD008677FE /* ContentView.swift */,
-				4C645571278201E50002EA0D /* Event */,
+				4C64557A2782EF550002EA0D /* DB */,
+				4C3225DC2783383000EA1E43 /* Event */,
 				4C645572278202F00002EA0D /* Helpers */,
 				4C645570278201D70002EA0D /* Map */,
+				4C645571278201E50002EA0D /* OldEvent */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -98,14 +140,14 @@
 			path = Map;
 			sourceTree = "<group>";
 		};
-		4C645571278201E50002EA0D /* Event */ = {
+		4C645571278201E50002EA0D /* OldEvent */ = {
 			isa = PBXGroup;
 			children = (
-				4C6455642781E0CD0002EA0D /* EventDetail.swift */,
-				4C6455602781DC670002EA0D /* EventItem.swift */,
-				4CF9781D2781AB9E008677FE /* EventRow.swift */,
+				4C6455642781E0CD0002EA0D /* OldEventDetail.swift */,
+				4C6455602781DC670002EA0D /* OldEventItem.swift */,
+				4CF9781D2781AB9E008677FE /* OldEventRow.swift */,
 			);
-			path = Event;
+			path = OldEvent;
 			sourceTree = "<group>";
 		};
 		4C645572278202F00002EA0D /* Helpers */ = {
@@ -114,6 +156,15 @@
 				4C645573278203240002EA0D /* SquareImageView.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4C64557A2782EF550002EA0D /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				4C6455832782F1AD0002EA0D /* Sample.swift */,
+				4C3225D32783212100EA1E43 /* LocalOnlyContentView.swift */,
+			);
+			path = DB;
 			sourceTree = "<group>";
 		};
 		4CF978012781A6BD008677FE = {
@@ -170,6 +221,8 @@
 			dependencies = (
 			);
 			name = FarmApp;
+			packageProductDependencies = (
+			);
 			productName = FarmApp;
 			productReference = 4CF9780A2781A6BD008677FE /* FarmApp.app */;
 			productType = "com.apple.product-type.application";
@@ -198,6 +251,9 @@
 				Base,
 			);
 			mainGroup = 4CF978012781A6BD008677FE;
+			packageReferences = (
+				4C6455752782C6510002EA0D /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 4CF9780B2781A6BD008677FE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -228,14 +284,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C3225D22783203300EA1E43 /* EventItemRow.swift in Sources */,
+				4C3225CE27831C3D00EA1E43 /* EventItem.swift in Sources */,
+				4C3225D6278321DC00EA1E43 /* Item.swift in Sources */,
 				4C6455562781CA400002EA0D /* Map.swift in Sources */,
+				4C6455842782F1AD0002EA0D /* Sample.swift in Sources */,
+				4C3225DE278344C700EA1E43 /* EventItemEdit.swift in Sources */,
 				4C645574278203240002EA0D /* SquareImageView.swift in Sources */,
+				4C3225DB278337B400EA1E43 /* EventItemAdd.swift in Sources */,
 				4CF978102781A6BD008677FE /* ContentView.swift in Sources */,
 				4CF9780E2781A6BD008677FE /* FarmAppApp.swift in Sources */,
 				4C6455672781E2160002EA0D /* ActiveButton.swift in Sources */,
-				4C6455612781DC670002EA0D /* EventItem.swift in Sources */,
-				4CF9781E2781AB9E008677FE /* EventRow.swift in Sources */,
-				4C6455652781E0CD0002EA0D /* EventDetail.swift in Sources */,
+				4C3225D82783221E00EA1E43 /* Group.swift in Sources */,
+				4C3225D42783212100EA1E43 /* LocalOnlyContentView.swift in Sources */,
+				4C3225E02783460900EA1E43 /* EventItemDetail.swift in Sources */,
+				4C6455612781DC670002EA0D /* OldEventItem.swift in Sources */,
+				4CF9781E2781AB9E008677FE /* OldEventRow.swift in Sources */,
+				4C6455652781E0CD0002EA0D /* OldEventDetail.swift in Sources */,
 				4C64555A2781D14A0002EA0D /* Event.swift in Sources */,
 				4CF9781C2781AB7B008677FE /* MapHome.swift in Sources */,
 				4C64555C2781DB2B0002EA0D /* ModelData.swift in Sources */,
@@ -372,6 +437,7 @@
 				DEVELOPMENT_TEAM = KS734H27LS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FarmApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -386,7 +452,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -401,6 +467,7 @@
 				DEVELOPMENT_TEAM = KS734H27LS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FarmApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -415,7 +482,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -441,6 +508,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4C6455752782C6510002EA0D /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 4CF978022781A6BD008677FE /* Project object */;
 }
