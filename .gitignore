@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/swift,macos,linux,windows,objective-c,xcode,dropbox
-# Edit at https://www.toptal.com/developers/gitignore?templates=swift,macos,linux,windows,objective-c,xcode,dropbox
+# Created by https://www.toptal.com/developers/gitignore/api/macos,windows,linux,xcode,swift,swiftpackagemanager,objective-c,dropbox
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,linux,xcode,swift,swiftpackagemanager,objective-c,dropbox
 
 ### Dropbox ###
 # Dropbox settings and caches
@@ -172,6 +172,12 @@ Dependencies/
 # https://github.com/johnno1962/injectionforxcode
 
 
+### SwiftPackageManager ###
+Packages
+xcuserdata
+*.xcodeproj
+
+
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
@@ -215,4 +221,4 @@ $RECYCLE.BIN/
 !*.xcworkspace/contents.xcworkspacedata
 **/xcshareddata/WorkspaceSettings.xcsettings
 
-# End of https://www.toptal.com/developers/gitignore/api/swift,macos,linux,windows,objective-c,xcode,dropbox
+# End of https://www.toptal.com/developers/gitignore/api/macos,windows,linux,xcode,swift,swiftpackagemanager,objective-c,dropbox
