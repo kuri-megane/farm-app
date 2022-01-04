@@ -12,8 +12,8 @@ struct EventItemEdit: View {
             SquareImageView(image: Image(item.imageName))
             
             HStack(alignment: .center, spacing: 15){
-                Image(systemName: item.isActive ? "leaf.fill" : "leaf")
                 Text("状態")
+                Image(systemName: item.isActive ? "leaf.fill" : "leaf")
                 Toggle(item.isActive ? "栽培中" : "栽培終了", isOn: $item.isActive)
             }
             
@@ -49,6 +49,13 @@ struct EventItemEdit: View {
             }
         }
         .navigationBarTitle("編集", displayMode: .inline)
+        .toolbar {
+            ToolbarItem(placement: .bottomBar) {
+              Button("完了") {
+                  print("編集完了")
+              }
+            }
+        }
         .padding()
     }
 }

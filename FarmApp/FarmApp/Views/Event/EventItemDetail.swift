@@ -7,16 +7,17 @@ struct EventItemDetail: View {
     var body: some View {
         VStack(alignment: .center){
             
-            SquareImageView(image: Image(item.imageName))
-            
             HStack(alignment: .center, spacing: 5){
                 if item.isActive {
                     Image(systemName: "leaf.fill")
                     Text("栽培中")
                 } else {
                     Image(systemName: "leaf")
+                    Text("栽培終了")
                 }
             }
+            
+            SquareImageView(image: Image(item.imageName))
             
             Text(item.name)
                 .font(.title2)
