@@ -2,7 +2,9 @@ import SwiftUI
 import RealmSwift
 
 struct EventItemDetail: View {
+    
     @ObservedRealmObject var item: Item
+    @State private var show: Bool = false
     
     var body: some View {
         VStack(alignment: .center){
@@ -30,11 +32,15 @@ struct EventItemDetail: View {
         }
         .navigationBarTitle("詳細", displayMode: .inline)
         .toolbar {
-          ToolbarItemGroup(placement: .navigationBarTrailing) {
-              NavigationLink(destination: EventItemEdit(item: item)){
-                  Text("編集")
-              }
-          }
+            ToolbarItemGroup(placement: .navigationBarTrailing) {
+                Button(action: { self.show.toggle() }) {
+                    Text("編集")
+                }
+                // EventItemEditは値を変えただけで画面が戻ってしまうためsheetを採用
+                .sheet(isPresented: self.$show) {
+                    EventItemEdit(item: item)
+                }
+            }
         }
         .padding()
     }

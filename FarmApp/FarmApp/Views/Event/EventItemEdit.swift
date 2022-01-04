@@ -5,57 +5,40 @@ struct EventItemEdit: View {
     
     @ObservedRealmObject var item: Item
     
-    // TODO: fix 値を1つ変えただけで画面が戻ってしまう
     var body: some View {
         VStack(alignment: .center){
-            
-            SquareImageView(image: Image(item.imageName))
-            
-            HStack(alignment: .center, spacing: 15){
-                Text("状態")
-                Image(systemName: item.isActive ? "leaf.fill" : "leaf")
-                Toggle(item.isActive ? "栽培中" : "栽培終了", isOn: $item.isActive)
-            }
-            
-            HStack(alignment: .center, spacing: 15){
-                Text("概要")
-                TextField("", text: $item.name)
-                    .frame(width: 300, height: 30)
-                    .cornerRadius(5)
-                    .overlay(RoundedRectangle(cornerRadius: 5).stroke(.gray, lineWidth: 1))
-            }
-
-            HStack(alignment: .center, spacing: 15){
-                Text("詳細")
-                TextEditor(text: $item.detail)
-                    .frame(width: 300, height: 200)
-                    .cornerRadius(5)
-                    .overlay(RoundedRectangle(cornerRadius: 5).stroke(.gray, lineWidth: 1))
-            }
-
-            HStack(alignment: .center, spacing: 15){
-                Text("場所")
-                HStack(alignment: .center){
-                    TextField("", value: $item.coordinates_x, formatter: NumberFormatter())
-                        .cornerRadius(5)
-                        .overlay(RoundedRectangle(cornerRadius: 5).stroke(.gray, lineWidth: 1))
-                        .keyboardType(.decimalPad)
-                    TextField("", value: $item.coordinates_y, formatter: NumberFormatter())
-                        .cornerRadius(5)
-                        .overlay(RoundedRectangle(cornerRadius: 5).stroke(.gray, lineWidth: 1))
-                        .keyboardType(.decimalPad)
+            List {
+                // 画像
+                Section {
+                    SquareImageView(image: Image(item.imageName))
                 }
-                .padding()
+                // 栽培状態
+                Section{
+                    HStack(alignment: .center, spacing: 15){
+                        Text("状態")
+                        Image(systemName: item.isActive ? "leaf.fill" : "leaf")
+                        Toggle(item.isActive ? "栽培中" : "栽培終了", isOn: $item.isActive)
+                    }
+                }
+                // 説明欄
+                Section {
+                    TextField("概要", text: $item.name)
+                    TextEditor(text: $item.detail)
+                        .frame(width: 300, height: 200)
+                }
+                // Map上の位置
+                Section {
+                    HStack(alignment: .center){
+                        Text("場所")
+                        TextField("", value: $item.coordinates_x, formatter: NumberFormatter())
+                            .keyboardType(.decimalPad)
+                        TextField("", value: $item.coordinates_y, formatter: NumberFormatter())
+                            .keyboardType(.decimalPad)
+                    }
+                }
             }
         }
         .navigationBarTitle("編集", displayMode: .inline)
-        .toolbar {
-            ToolbarItem(placement: .bottomBar) {
-              Button("完了") {
-                  print("編集完了")
-              }
-            }
-        }
         .padding()
     }
 }
