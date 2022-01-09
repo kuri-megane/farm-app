@@ -3,9 +3,10 @@ import RealmSwift
 
 struct EventItem: View {
     @ObservedRealmObject var item: Item
+    @State private var isShowSubView = false
 
     var body: some View {
-        NavigationLink(destination: EventItemDetail(item: item)) {
+        NavigationLink(destination: EventItemDetail(item: item, isShowSubView: $isShowSubView)) {
             VStack(alignment: .leading){
                 // 画像
                 SquareImageView(image: Image(item.imageName))

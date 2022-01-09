@@ -35,6 +35,12 @@ struct EventItemEdit: View {
                             .keyboardType(.decimalPad)
                     }
                 }
+                // 削除
+                Section {
+                    Button("削除") {
+                        $item.delete()
+                    }
+                }
             }
         }
         .navigationBarTitle("編集", displayMode: .inline)
