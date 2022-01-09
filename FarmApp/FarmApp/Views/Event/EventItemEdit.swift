@@ -2,7 +2,6 @@ import SwiftUI
 import RealmSwift
 
 struct EventItemEdit: View {
-    
     @ObservedRealmObject var item: Item
     
     var body: some View {

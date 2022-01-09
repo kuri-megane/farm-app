@@ -2,7 +2,6 @@ import SwiftUI
 import RealmSwift
 
 struct EventItemDetail: View {
-    
     @ObservedRealmObject var item: Item
     @State private var show: Bool = false
     

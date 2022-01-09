@@ -1,9 +1,8 @@
 import SwiftUI
 import RealmSwift
 
-struct MapHome: View {
+struct Home: View {
     @ObservedResults(Group.self) var groups
-    @EnvironmentObject var modelData: ModelData
     
     var body: some View {
         NavigationView {
@@ -26,9 +25,8 @@ struct MapHome: View {
     }
 }
 
-struct MapHome_Previews: PreviewProvider {
+struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        MapHome()
-            .environmentObject(ModelData())
+        Home()
     }
 }
