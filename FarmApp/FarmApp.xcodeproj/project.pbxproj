@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C20C392278AB1AB00730D69 /* MapItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C20C391278AB1AB00730D69 /* MapItem.swift */; };
 		4C3225CE27831C3D00EA1E43 /* EventItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3225CD27831C3D00EA1E43 /* EventItem.swift */; };
 		4C3225D22783203300EA1E43 /* EventItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3225D12783203300EA1E43 /* EventItemRow.swift */; };
 		4C3225D6278321DC00EA1E43 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3225D5278321DC00EA1E43 /* Item.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C20C391278AB1AB00730D69 /* MapItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapItem.swift; sourceTree = "<group>"; };
 		4C3225CD27831C3D00EA1E43 /* EventItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItem.swift; sourceTree = "<group>"; };
 		4C3225D12783203300EA1E43 /* EventItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItemRow.swift; sourceTree = "<group>"; };
 		4C3225D5278321DC00EA1E43 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			children = (
 				4C6455552781CA400002EA0D /* Map.swift */,
 				4CF9781B2781AB7B008677FE /* MapHome.swift */,
+				4C20C391278AB1AB00730D69 /* MapItem.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				4C5C6C782783DFF6007084CD /* SwiftUIView.swift in Sources */,
 				4C3225D6278321DC00EA1E43 /* Item.swift in Sources */,
 				4C6455562781CA400002EA0D /* Map.swift in Sources */,
+				4C20C392278AB1AB00730D69 /* MapItem.swift in Sources */,
 				4C3225DE278344C700EA1E43 /* EventItemEdit.swift in Sources */,
 				4C645574278203240002EA0D /* SquareImageView.swift in Sources */,
 				4CF978102781A6BD008677FE /* ContentView.swift in Sources */,

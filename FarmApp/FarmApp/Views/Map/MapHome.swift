@@ -8,11 +8,8 @@ struct MapHome: View {
     var body: some View {
         NavigationView {
             List{
-                Map()
-                
                 if let group = groups.first {
-                    // Pass the Group objects to a view further
-                    // down the hierarchy
+                    Map(group: group)
                     EventItemRow(group: group)
                 } else {
                     // For this small app, we only want one group in the realm.
@@ -22,11 +19,6 @@ struct MapHome: View {
                         $groups.append(Group())
                     }
                 }
-                
-//                ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
-//                    EventRow(categoryName: key, items: modelData.categories[key]!)
-//                }
-//                .listRowInsets(EdgeInsets())
             }
             .navigationTitle("畑アプリ")
             .listStyle(InsetListStyle())
