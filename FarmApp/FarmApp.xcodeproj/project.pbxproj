@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C20C392278AB1AB00730D69 /* MapItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C20C391278AB1AB00730D69 /* MapItem.swift */; };
+		4C20C394278B00E500730D69 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C20C393278B00E500730D69 /* CircleImageView.swift */; };
 		4C3225CE27831C3D00EA1E43 /* EventItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3225CD27831C3D00EA1E43 /* EventItem.swift */; };
 		4C3225D22783203300EA1E43 /* EventItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3225D12783203300EA1E43 /* EventItemRow.swift */; };
 		4C3225D6278321DC00EA1E43 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3225D5278321DC00EA1E43 /* Item.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		4C20C391278AB1AB00730D69 /* MapItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapItem.swift; sourceTree = "<group>"; };
+		4C20C393278B00E500730D69 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
 		4C3225CD27831C3D00EA1E43 /* EventItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItem.swift; sourceTree = "<group>"; };
 		4C3225D12783203300EA1E43 /* EventItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItemRow.swift; sourceTree = "<group>"; };
 		4C3225D5278321DC00EA1E43 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				4C645573278203240002EA0D /* SquareImageView.swift */,
+				4C20C393278B00E500730D69 /* CircleImageView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				4C3225D82783221E00EA1E43 /* Group.swift in Sources */,
 				4C3225E02783460900EA1E43 /* EventItemDetail.swift in Sources */,
 				4C64555A2781D14A0002EA0D /* Event.swift in Sources */,
+				4C20C394278B00E500730D69 /* CircleImageView.swift in Sources */,
 				4CF9781C2781AB7B008677FE /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,6 +19,7 @@ struct EventItemDetail: View {
             }
             
             SquareImageView(image: Image(item.imageName))
+                .frame(width: 155, height: 155)
             
             Text(item.name)
                 .font(.title2)

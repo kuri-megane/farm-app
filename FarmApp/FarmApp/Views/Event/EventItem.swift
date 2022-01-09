@@ -8,11 +8,8 @@ struct EventItem: View {
         NavigationLink(destination: EventItemDetail(item: item)) {
             VStack(alignment: .leading){
                 // 画像
-                Image("daikon")
-                    .renderingMode(.original)
-                    .resizable()
+                SquareImageView(image: Image(item.imageName))
                     .frame(width: 155, height: 155)
-                    .cornerRadius(20)
                 // イベント名
                 Text(item.name)
                     .foregroundColor(.primary)

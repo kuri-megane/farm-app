@@ -8,9 +8,8 @@ struct MapItem: View {
         
             VStack(alignment: .leading){
                 NavigationLink(destination: EventItemDetail(item: item)) {
-                    Image(item.imageName)
-                        .resizable()
-                        .frame(width: 30, height: 30)
+                    CircleImageView(image: Image(item.imageName))
+                        .frame(width: 50, height: 50)
                 }
             }
         
